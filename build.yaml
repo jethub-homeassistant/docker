@@ -1,19 +1,19 @@
-image: homeassistant/{arch}-homeassistant-base
-shadow_repository: ghcr.io/home-assistant
+image: jethubjhaos/{arch}-homeassistant-base
+shadow_repository: ghcr.io/jethub-homeassistant
 build_from:
-  aarch64: ghcr.io/home-assistant/aarch64-base-python:3.10-alpine3.16
-  armhf: ghcr.io/home-assistant/armhf-base-python:3.10-alpine3.16
-  armv7: ghcr.io/home-assistant/armv7-base-python:3.10-alpine3.16
-  amd64: ghcr.io/home-assistant/amd64-base-python:3.10-alpine3.16
-  i386: ghcr.io/home-assistant/i386-base-python:3.10-alpine3.16
+  aarch64: ghcr.io/jethub-homeassistant/aarch64-base-python:3.10-alpine3.16
+  armhf: ghcr.io/jethub-homeassistant/armhf-base-python:3.10-alpine3.16
+  armv7: ghcr.io/jethub-homeassistant/armv7-base-python:3.10-alpine3.16
+  amd64: ghcr.io/jethub-homeassistant/amd64-base-python:3.10-alpine3.16
+  i386: ghcr.io/jethub-homeassistant/i386-base-python:3.10-alpine3.16
 codenotary:
-  signer: notary@home-assistant.io
-  base_image: notary@home-assistant.io
+  signer: vb@jethome.ru
+  base_image: vb@jethome.ru
 labels:
   io.hass.type: homeassistant-base
   org.opencontainers.image.title: Home Assistant Core baseimage
   org.opencontainers.image.description: Baseimage for Home Assistant Core container/supervisor installation
-  org.opencontainers.image.source: https://github.com/home-assistant/docker
+  org.opencontainers.image.source: https://github.com/jethub-homeassistant/docker
   org.opencontainers.image.authors: The Home Assistant Authors
   org.opencontainers.image.url: https://www.home-assistant.io/
   org.opencontainers.image.documentation: https://www.home-assistant.io/docs/
