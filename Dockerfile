@@ -11,7 +11,7 @@ ARG \
     TELLDUS_COMMIT
 
 # Add Home Assistant wheels repository
-ENV WHEELS_LINKS=https://wheels.home-assistant.io/musllinux/
+ENV WHEELS_LINKS=https://wheels.jhaos.dev/musllinux/
 
 ##
 # Install component packages
