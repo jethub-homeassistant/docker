@@ -61,8 +61,8 @@ jobs:
         fi
 
     - name: Build wheels
-      uses: jethub-homeassistant/wheels@2023.10.1
-      if: steps.requirements.outputs.changed == 'true'
+      uses: jethub-homeassistant/wheels@2023.09.1
+      if: 0 #steps.requirements.outputs.changed == 'true'
       with:
         tag: musllinux_1_2
         abi: cp310
@@ -72,7 +72,7 @@ jobs:
         requirements: "requirements.txt"
 
     - name: Build wheels cp311
-      uses: jethub-homeassistant/wheels@2023.10.1
+      uses: jethub-homeassistant/wheels@2023.09.1
       if: steps.requirements.outputs.changed == 'true'
       with:
         tag: musllinux_1_2
