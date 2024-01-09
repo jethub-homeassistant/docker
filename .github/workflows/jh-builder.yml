@@ -60,8 +60,8 @@ jobs:
           echo "changed=true" >> $GITHUB_OUTPUT
         fi
 
-    - name: Build wheels cp311
-      uses: jethub-homeassistant/wheels@2024.01.0
+    - name: Build wheels cp312
+      uses: jethub-homeassistant/wheels@2023.10.5
       if: github.event_name == 'release' || steps.requirements.outputs.changed == 'true'
       with:
         tag: musllinux_1_2
